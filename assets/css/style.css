@@ -7,17 +7,17 @@ body {
 }
 .bulb {
   position: relative;
-  width: 500px;
-  height: 50px;
+  width: 260px;
   margin-left: auto;
+  margin-top: -75px;
 }
 .bulbbox {
-  width: 850px;
+  width: 600px;
   margin: 70px auto;
   padding: 45px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  height: 360px;
+  height: 380px;
 }
 .bulbbox h1 {
   font-size: 45px;
@@ -38,6 +38,7 @@ button {
   border-left: 2px solid #979797;
   border-right: none;
   border-bottom: none;
+  margin-top: 60px;
 }
 
 .o {
@@ -64,4 +65,22 @@ button {
 
 .text-animation {
   animation: colorAnimation 3s infinite;
+}
+
+/* responsive */
+@media screen and (max-width: 700px) {
+  .bulb {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .bulb {
+    width: 520px;
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .bulb {
+    width: 600px;
+  }
 }
