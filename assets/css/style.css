@@ -5,19 +5,19 @@
 body {
   background-color: #f5f5f5;
 }
-.bulb {
-  position: relative;
-  width: 260px;
-  margin-left: auto;
-  margin-top: -75px;
-}
-.bulbbox {
-  width: 600px;
-  margin: 70px auto;
-  padding: 45px;
+
+.main-box {
+  width: 700px;
+  margin: 40px auto;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  height: 380px;
+  text-align: center;
+}
+.bulb {
+  position: relative;
+}
+.bulbbox {
+  padding: 20px 20px;
 }
 .bulbbox h1 {
   font-size: 45px;
@@ -27,24 +27,23 @@ body {
   width: 275px;
   margin-top: 7px;
 }
-.buttonbox {
-  width: 50px;
-}
+
 button {
-  padding: 10px 25px;
+  padding: 10px 35px;
   background-color: #e9e9ed;
   color: black;
   border-top: 2px solid #979797;
   border-left: 2px solid #979797;
   border-right: none;
   border-bottom: none;
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
-.o {
+.on {
   position: absolute;
-  top: -1px;
-  left: 52px;
+  top: 0;
+  left: 244px;
 }
 
 .dnone {
@@ -67,20 +66,24 @@ button {
   animation: colorAnimation 3s infinite;
 }
 
-/* responsive */
-@media screen and (max-width: 700px) {
-  .bulb {
-    width: 380px;
+@media screen and (max-width: 680px) {
+  .main-box {
+    width: 500px;
+  }
+  .on {
+    left: 145px;
   }
 }
-@media screen and (max-width: 550px) {
-  .bulb {
-    width: 520px;
-    margin-top: 32px;
+@media screen and (max-width: 468px) {
+  .main-box {
+    width: 320px;
+  }
+  .on {
+    left: 53px;
   }
 }
-@media screen and (max-width: 370px) {
-  .bulb {
-    width: 600px;
+@media screen and (max-width: 310px) {
+  .main-box {
+    width: 275px;
   }
 }

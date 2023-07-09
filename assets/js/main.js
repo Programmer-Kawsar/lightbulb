@@ -8,12 +8,13 @@ onBulb.classList.add("dnone");
 
 button.addEventListener('click', () => {
     onBulb.classList.toggle("dnone");
-    onBulb.classList.add("o");
+   
     offBulb.classList.toggle("dnone"); 
 
 
     if (button.innerHTML === "ON") {
         button.innerHTML = "OFF";
+        box.style.height = ("524px")
         button.style. borderBottom= ("2px solid #979797");
         button.style. borderRight= ("2px solid #979797");
         button.style. borderLeft= ("None");
